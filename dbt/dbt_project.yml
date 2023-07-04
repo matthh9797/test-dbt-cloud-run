@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_dbt_project'
+name: 'my_dbt_project_test'
 version: '1.0.0'
 config-version: 2
 
@@ -28,7 +28,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
 models:
-  my_dbt_project:
+  my_dbt_project_test:
     # Config indicated by + and applies to all files under models/example/
     staging:
       +materialized: view
