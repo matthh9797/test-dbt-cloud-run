@@ -8,6 +8,6 @@ USER root
 WORKDIR /dbt
 COPY --from=builder /app/server ./
 COPY script.sh ./
-COPY jaffle-shop ./
+COPY dbt ./
 
 ENTRYPOINT "./server"
