@@ -1,4 +1,4 @@
-my_dbt_project:
+my_dbt_project_test:
   target: prod
   outputs:
 
