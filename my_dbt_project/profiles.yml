@@ -1,0 +1,26 @@
+my_dbt_project:
+  target: prod
+  outputs:
+
+    prod:
+      dataset: YOUR_PROD_DATASET
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: YOUR_LOCATION # (EU, US)
+      method: oauth
+      priority: interactive
+      project: YOUR_PROJECT
+      threads: 4
+      type: bigquery
+    
+    dev:
+      dataset: YOUR_DEV_DATASET
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: YOUR_LOCATION # (EU, US)
+      method: oauth # can change to service-account
+      # keyfile: # if using service-account for authentication
+      priority: interactive
+      project: YOUR_PROJECT
+      threads: 4
+      type: bigquery   
